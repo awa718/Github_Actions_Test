@@ -30,6 +30,8 @@ jobs:
         with:
           # jmeter test plan to execute
           test-plan-path: './SAMPLE_SCRIPT_3.jmx'
+        env:
+          CSV_PATH: './credentials.csv'
       
       - name: Upload Results
         uses: actions/upload-artifact@v3
