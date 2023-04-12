@@ -32,7 +32,8 @@ jobs:
           test-plan-path: './SAMPLE_SCRIPT_3.jmx'
         env:
           CSV_PATH: './credentials.csv'
-      
+      # The env section sets an environment variable named CSV_PATH to './credentials.csv'
+      # which is used by the JMeter test plan.
       - name: Upload Results
         uses: actions/upload-artifact@v3
         with:
